@@ -26,3 +26,8 @@ Clock 是一个多进程任务处理框架，通过TaskList->getTask()来获取�
 ## 如何使用
  我在项目中提供了一个 `clock.php` 作为示例， 事实上他非常简单，你只需要简单的继承AbstractWorker
  和AbstractTaskList 并实现其中的抽象方法就可以，非常简单 对吧。
+
+## 如何启动
+ php clock.php start 调试模式
+ php clcok.php start --d 守护模式
+ php clock.php stop 停止
